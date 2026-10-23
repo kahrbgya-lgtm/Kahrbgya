@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شكراً لطلبك! 🎉 | كهربجيه⚡️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            sage: '#4A6B5D',
+                            sageDark: '#354E43',
+                            cream: '#FBF9F5',
+                            sand: '#F2ECE4',
+                            dark: '#222926',
+                            muted: '#6B7570'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #FBF9F5;
+            color: #222926;
+        }
+        .soft-shadow {
+            box-shadow: 0 20px 40px -10px rgba(53, 78, 67, 0.1), 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-sage selection:text-white">
+
+    <!-- شريط علوي بسيط -->
+    <header class="py-6 text-center border-b border-brand-sand bg-white">
+        <a href="index.html" class="text-2xl font-black text-brand-dark inline-flex items-center gap-2">
+            <span class="w-9 h-9 rounded-full bg-brand-sage flex items-center justify-center text-white text-base shadow-sm">
+                <i class="fa-solid fa-bolt-lightning text-yellow-300"></i>
+            </span>
+            كهربجيه<span class="text-brand-sage text-xl font-bold">⚡️</span>
+        </a>
+    </header>
+
+    <!-- محتوى صفحة الشكر -->
+    <main class="max-w-2xl mx-auto px-6 py-10 w-full flex-grow flex items-center">
+        <div class="bg-white rounded-3xl border border-brand-sand p-6 sm:p-10 soft-shadow w-full text-center space-y-6">
+            
+            <!-- أيقونة النجاح المتحركة -->
+            <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-4xl shadow-inner animate-bounce">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <!-- عبارات الشكر -->
+            <div class="space-y-2">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-black">
+                    تم تسجيل طلبك بنجاح
+                </span>
+                <h1 class="text-2xl sm:text-3xl font-black text-brand-dark">
+                    شكراً لثقتك في كهربجيه⚡️!
+                </h1>
+                <p class="text-sm text-brand-muted max-w-md mx-auto leading-relaxed">
+                    طلبك وصل لفريقنا وجاري تجهيزه للشحن من الصعيد مباشرة إلى باب بيتك.
+                </p>
+            </div>
+
+            <!-- بطاقة تفاصيل الحساب -->
+            <div class="bg-brand-cream rounded-2xl p-5 border border-brand-sand text-right space-y-3 text-xs sm:text-sm">
+                <h3 class="font-black text-brand-dark text-sm border-b border-brand-sand pb-2 flex items-center justify-between">
+                    <span>ملخص الفاتورة</span>
+                    <span class="text-brand-sage text-xs">الدفع عند الاستلام</span>
+                </h3>
+                
+                <div class="flex justify-between items-center text-brand-muted">
+                    <span>جهاز كهربجيه الأصلي + الـ 3 رؤوس + الحامل اللاصق:</span>
+                    <span class="font-bold text-brand-dark">550 جنية</span>
+                </div>
+
+                <div class="flex justify-between items-center text-brand-muted">
+                    <span>مصاريف الشحن (شحن من الصعيد لكافة المحافظات):</span>
+                    <span class="font-bold text-brand-dark">110 جنية</span>
+                </div>
+
+                <div class="border-t border-brand-sand pt-3 flex justify-between items-center font-black text-brand-sage text-base">
+                    <span>الإجمالي المطلوب سداده للمندوب:</span>
+                    <span class="text-xl sm:text-2xl font-black">660 جنية</span>
+                </div>
+            </div>
+
+            <!-- تنبيه المعاينة المطمئن -->
+            <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl text-right flex items-start gap-3">
+                <i class="fa-solid fa-shield-check text-emerald-600 text-xl mt-0.5"></i>
+                <div class="space-y-1">
+                    <h4 class="font-black text-emerald-950 text-xs sm:text-sm">معاينة وفحص كامل قبل دفع أي مليم</h4>
+                    <p class="text-xs text-emerald-800 leading-relaxed">
+                        عند وصول المندوب، لك كامل الحرية في فتح العلبة وفحص الجهاز والتأكد من وجود الرؤوس الثلاثة والحامل بنفسك قبل الاستلام.
+                    </p>
+                </div>
+            </div>
+
+            <!-- خطوات ما بعد الطلب -->
+            <div class="border-t border-brand-sand pt-5 text-right space-y-3">
+                <h4 class="font-black text-xs sm:text-sm text-brand-dark">إيه اللي هيحصل دلوقتي؟</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-brand-muted">
+                    <div class="flex items-center gap-2 bg-brand-sand/30 p-2.5 rounded-xl">
+                        <i class="fa-solid fa-phone text-brand-sage"></i>
+                        <span>هنتواصل معاك هاتفياً أو واتساب لتأكيد الشحن</span>
+                    </div>
+                    <div class="flex items-center gap-2 bg-brand-sand/30 p-2.5 rounded-xl">
+                        <i class="fa-solid fa-truck-fast text-brand-sage"></i>
+                        <span>الشحن بيوصلك خلال 48 لـ 72 ساعة كحد أقصى</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار الإجراءات -->
+            <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                <a href="https://wa.me/201000000000" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 px-4 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>تأكيد أسرع عبر الواتساب</span>
+                </a>
+
+                <a href="index.html" class="flex-1 bg-brand-sand hover:bg-brand-sand/80 text-brand-dark py-3.5 px-4 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center transition">
+                    العودة لصفحة المنتج
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- فوتر بسيط -->
+    <footer class="py-6 text-center text-xs text-brand-muted border-t border-brand-sand bg-white">
+        <p>© 2026 جميع الحقوق محفوظة لـ <strong>كهربجيه⚡️</strong></p>
+    </footer>
+
+</body>
+</html>
