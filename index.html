@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كهربجيه⚡️ | تجربة النظافة الفاخرة فائقة القوة</title>
-    <!-- خط Alexandria الفاخر -->
+    <title>كهربجيه⚡️ | جهاز التنظيف الذكي فائق القوة</title>
+    <!-- استدعاء خط IBM Plex Sans Arabic الملكي -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -16,23 +16,21 @@
             theme: {
                 extend: {
                     colors: {
-                        stone: {
-                            base: '#F8F5EE',
+                        royal: {
+                            deep: '#0F261C',      /* زيتي ملكي عميق */
+                            surface: '#183B2C',   /* زيتي فاخر */
+                            pearl: '#FAF7F2',     /* لؤلؤي دافئ ناعم */
                             card: '#FFFFFF',
-                            cardSoft: '#F2ECE1',
-                            dark: '#111412',
-                            charcoal: '#1E2320',
-                            border: '#E5DDCF',
-                            borderDark: '#D4C8B5',
-                            gold: '#C5A880',
-                            goldDark: '#9E7E55',
-                            goldLight: '#F7F2E8',
-                            accent: '#264234',
-                            muted: '#6E7670'
+                            border: '#E8DFCE',    /* إطار ذهبي هادئ */
+                            gold: '#D4AF37',      /* ذهبي شمبانيا حقيقي */
+                            goldDark: '#A88422',  /* ذهبي برونزي غني */
+                            goldLight: '#FDF8EE', /* كريمي بلمسة ذهب */
+                            charcoal: '#1A1E1C',
+                            muted: '#626B66'
                         }
                     },
                     fontFamily: {
-                        alexandria: ['"Alexandria"', 'sans-serif'],
+                        arabic: ['"IBM Plex Sans Arabic"', 'sans-serif'],
                     }
                 }
             }
@@ -40,24 +38,27 @@
     </script>
     <style>
         body {
-            font-family: 'Alexandria', sans-serif;
-            background-color: #F8F5EE;
-            color: #111412;
-            letter-spacing: -0.015em;
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: #FAF7F2;
+            color: #1A1E1C;
         }
-        .luxury-shadow {
-            box-shadow: 0 25px 60px -15px rgba(25, 20, 15, 0.07), 0 10px 25px -5px rgba(25, 20, 15, 0.03);
+        .royal-shadow {
+            box-shadow: 0 25px 50px -15px rgba(15, 38, 28, 0.08), 0 8px 20px -6px rgba(15, 38, 28, 0.03);
+        }
+        .gold-glow {
+            box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.25);
         }
         .glass-nav {
-            background: rgba(248, 245, 238, 0.88);
+            background: rgba(250, 247, 242, 0.92);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
         }
         .thumb-active {
-            border-color: #111412 !important;
-            box-shadow: 0 0 0 2px #C5A880;
+            border-color: #0F261C !important;
+            box-shadow: 0 0 0 2px #D4AF37;
             transform: scale(1.05);
         }
+        /* إخفاء شريط تايني هوست */
         div:has(a[href*="tiiny.host"]), a[href*="tiiny.host"], [class*="tiiny"], [id*="tiiny"] {
             display: none !important;
             visibility: hidden !important;
@@ -65,133 +66,369 @@
         }
     </style>
 </head>
-<body class="selection:bg-stone-dark selection:text-white pb-20 md:pb-10">
+<body class="selection:bg-royal-deep selection:text-white pb-24 md:pb-12">
 
-    <!-- شريط الإعلان العلوي -->
-    <div class="bg-stone-dark text-stone-base text-center py-2.5 px-4 text-xs font-medium border-b border-stone-gold/25 flex items-center justify-center gap-2">
-        <span class="inline-flex items-center gap-1.5 text-stone-gold font-bold">
-            <i class="fa-solid fa-sparkles text-yellow-300"></i> عرض الإطلاق الحصري
+    <!-- شريط الإعلان الملكي -->
+    <div class="bg-royal-deep text-white text-center py-2.5 px-4 text-xs font-medium border-b border-royal-gold/30 flex items-center justify-center gap-2">
+        <span class="inline-flex items-center gap-1.5 text-royal-gold font-bold">
+            <i class="fa-solid fa-crown text-yellow-300"></i> عرض الإطلاق الخاص
         </span>
         <span class="text-neutral-500">•</span>
-        <span>بـ <strong>550 ج</strong> بدلاً من <span class="line-through text-neutral-400">800 ج</span></span>
+        <span>بـ <strong>550 ج.م</strong> بدلاً من <span class="line-through text-neutral-400">800 ج</span></span>
         <span class="text-neutral-500">•</span>
-        <span class="text-neutral-300 font-normal">الشحن 110 ج (شحن الصعيد) — يوجد معاينة لمن يريد</span>
+        <span class="text-amber-200">الشحن 110 ج (شحن الصعيد) — يوجد معاينة لمن يريد</span>
     </div>
 
-    <!-- نافبار نقي -->
-    <header class="sticky top-0 z-40 glass-nav border-b border-stone-border/80">
+    <!-- نافبار نقي بألوان دافئة -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-royal-border/80">
         <div class="max-w-6xl mx-auto px-5 py-3.5 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black tracking-tight text-stone-dark flex items-center gap-2">
-                <span class="w-8 h-8 rounded-full bg-stone-dark flex items-center justify-center text-stone-gold text-xs shadow-md">
+            <a href="#" class="text-2xl font-black tracking-tight text-royal-deep flex items-center gap-2">
+                <span class="w-8 h-8 rounded-full bg-royal-deep flex items-center justify-center text-royal-gold text-xs shadow-md">
                     <i class="fa-solid fa-bolt-lightning text-yellow-300"></i>
                 </span>
                 <span>كهربجيه</span>
-                <span class="text-stone-goldDark text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-stone-goldLight border border-stone-gold/30">الإصدار الأصلي</span>
+                <span class="text-[11px] font-bold text-royal-goldDark px-2.5 py-0.5 rounded-full bg-royal-goldLight border border-royal-gold/40">الإصدار الملكي</span>
             </a>
 
             <div class="flex items-center gap-3">
-                <div class="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-emerald-800 bg-emerald-50 px-3.5 py-1 rounded-full border border-emerald-200">
-                    <i class="fa-solid fa-shield-check"></i>
+                <div class="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-emerald-900 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+                    <i class="fa-solid fa-shield-halved text-emerald-700"></i>
                     <span>فحص ومعاينة لمن يرغب</span>
                 </div>
-                <a href="#order" class="bg-stone-dark hover:bg-neutral-800 text-white px-5 py-2.5 rounded-xl text-xs font-bold transition duration-300 shadow-sm">
+                <a href="#order" class="bg-royal-deep hover:bg-royal-surface text-white px-5 py-2.5 rounded-xl text-xs font-bold transition duration-300 shadow-md border border-royal-gold/30">
                     اطلب بـ 550 ج
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section الرئيسي -->
-    <section class="max-w-6xl mx-auto px-5 pt-8 pb-14">
+    <!-- Hero Section الرئيسي الفاخر -->
+    <section class="max-w-6xl mx-auto px-5 pt-8 pb-16">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
+            <!-- النصوص والشرح والطلب -->
             <div class="lg:col-span-6 space-y-6 text-center lg:text-right">
                 
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-border text-stone-accent text-xs font-bold shadow-sm">
-                    <span class="flex h-2 w-2 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
-                    </span>
-                    <span>تصميم معماري فاخر وعزم تنظيف فائق</span>
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-royal-border text-royal-deep text-xs font-bold shadow-sm">
+                    <i class="fa-solid fa-sparkles text-royal-gold"></i>
+                    <span>الهندسة الأحدث للتنظيف المنزلي فائق القوة</span>
                 </div>
 
-                <h1 class="text-3xl sm:text-5xl font-black text-stone-dark leading-[1.3] tracking-tight">
-                    قوة عزم جبارة.. <br>
-                    <span class="text-stone-accent">ونظافة عميقة</span> تليق بأناقة منزلك.
+                <h1 class="text-3xl sm:text-5xl font-black text-royal-deep leading-[1.3] tracking-tight">
+                    نظافة عميقة بلا تعب.. <br>
+                    <span class="text-royal-goldDark">قوة عزم جبارة</span> تليق بأناقة منزلك.
                 </h1>
 
-                <p class="text-stone-muted text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 font-normal">
-                    وداعاً للفرك اليدوي الشاق وإجهاد مفاصل اليد والظهر. صُمم جهاز كهربجيه ليدور بسرعة دوران مضاعفة تفتت أصعب الدهون المحروقة وتكلسات الرخام والسيراميك في ثوانٍ معدودة.
+                <p class="text-royal-muted text-sm sm:text-base leading-relaxed max-w-lg mx-auto lg:mx-0 font-normal">
+                    وداعاً للفرك اليدوي الشاق وآلام الظهر والمعصم. يدور بسرعة فائقة وعزم مضاعف ليفتت الدهون المحروقة وتكلسات الرخام والسيراميك في ثوانٍ معدودة بلمسة زر واحدة.
                 </p>
 
-                <!-- تنبيه سوكت الشحن -->
-                <div class="p-4 bg-amber-50/90 border border-amber-200 rounded-2xl flex items-start gap-3 text-right text-xs">
+                <!-- تنبيه أمان سوكت الشحن الفاخر -->
+                <div class="p-4 bg-amber-50/90 border border-amber-200 rounded-2xl flex items-start gap-3 text-right text-xs shadow-sm">
                     <div class="w-7 h-7 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-sm shrink-0 mt-0.5">
-                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <i class="fa-solid fa-triangle-exclamation text-amber-600"></i>
                     </div>
                     <div class="space-y-0.5">
-                        <h4 class="font-bold text-amber-950">إرشاد أمان هندسي هام:</h4>
+                        <h4 class="font-bold text-amber-950">إرشاد أمان للحفاظ على الجهاز:</h4>
                         <p class="text-[11px] text-amber-900 leading-relaxed font-normal">
-                            يُرجى التأكد دائماً من <strong>إغلاق سدادة السيليكون المحكمة لمنفذ الشحن بإحكام تام</strong> قبل الاستخدام أو الغسيل بالماء لضمان العزل الكامل للموتور الداخلي.
+                            يُرجى التأكد دائماً من <strong>إغلاق سدادة السيليكون لمنفذ الشحن بإحكام تام</strong> قبل الاستخدام أو الغسيل بالماء لضمان العزل الكامل للموتور الداخلي.
                         </p>
                     </div>
                 </div>
 
-                <!-- الميزات -->
-                <div class="grid grid-cols-3 gap-2.5 pt-1 text-center">
-                    <div class="p-3 rounded-2xl bg-white border border-stone-border shadow-sm space-y-1">
-                        <div class="text-stone-dark text-base"><i class="fa-solid fa-gem text-amber-600"></i></div>
-                        <div class="font-bold text-xs text-stone-dark">رخام وحجر</div>
-                        <div class="text-[10px] text-stone-muted">آمن على الحساس</div>
+                <!-- شارات المزايا الثلاثية -->
+                <div class="grid grid-cols-3 gap-3 pt-1 text-center">
+                    <div class="p-3.5 rounded-2xl bg-white border border-royal-border shadow-sm space-y-1">
+                        <div class="text-royal-gold text-lg"><i class="fa-solid fa-droplet text-blue-500"></i></div>
+                        <div class="font-bold text-xs text-royal-deep">عزل IPX7 كامل</div>
+                        <div class="text-[10px] text-royal-muted font-medium">مقاوم للماء 100%</div>
                     </div>
-                    <div class="p-3 rounded-2xl bg-white border border-stone-border shadow-sm space-y-1">
-                        <div class="text-stone-dark text-base"><i class="fa-solid fa-droplet text-blue-500"></i></div>
-                        <div class="font-bold text-xs text-stone-dark">عزل IPX7 كامل</div>
-                        <div class="text-[10px] text-stone-muted">مقاوم للماء 100%</div>
+                    <div class="p-3.5 rounded-2xl bg-white border border-royal-border shadow-sm space-y-1">
+                        <div class="text-royal-gold text-lg"><i class="fa-solid fa-bolt text-amber-500"></i></div>
+                        <div class="font-bold text-xs text-royal-deep">شحن Type-C</div>
+                        <div class="text-[10px] text-royal-muted font-medium">بطارية ليثيوم طويلة</div>
                     </div>
-                    <div class="p-3 rounded-2xl bg-white border border-stone-border shadow-sm space-y-1">
-                        <div class="text-stone-dark text-base"><i class="fa-solid fa-gift text-stone-goldDark"></i></div>
-                        <div class="font-bold text-xs text-stone-dark">حامل لاصق مذهب</div>
-                        <div class="text-[10px] text-stone-muted">تثبيت بدون حفر</div>
+                    <div class="p-3.5 rounded-2xl bg-white border border-royal-border shadow-sm space-y-1">
+                        <div class="text-royal-gold text-lg"><i class="fa-solid fa-gift text-royal-goldDark"></i></div>
+                        <div class="font-bold text-xs text-royal-deep">حامل لاصق مذهب</div>
+                        <div class="text-[10px] text-royal-muted font-medium">تثبيت بلا مسامير</div>
                     </div>
                 </div>
 
+                <!-- زر الطلب الفوري -->
                 <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start items-center">
-                    <a href="#order" class="w-full sm:w-auto bg-stone-dark hover:bg-neutral-800 text-white px-8 py-4 rounded-2xl text-sm font-bold transition duration-300 shadow-xl shadow-neutral-900/15 flex items-center justify-center gap-2">
+                    <a href="#order" class="w-full sm:w-auto bg-royal-deep hover:bg-royal-surface text-white px-8 py-4 rounded-2xl text-sm font-bold transition duration-300 shadow-xl shadow-royal-deep/20 flex items-center justify-center gap-2 border border-royal-gold/30">
                         <span>اطلب الآن بـ 550 ج.م ⚡️</span>
-                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                        <i class="fa-solid fa-arrow-left text-xs text-royal-gold"></i>
                     </a>
-                    <div class="text-xs text-stone-muted text-center sm:text-right">
-                        <div class="font-bold text-stone-dark">الدفع نقداً عند الاستلام</div>
+                    <div class="text-xs text-royal-muted text-center sm:text-right">
+                        <div class="font-bold text-royal-deep">الدفع كاش عند الاستلام</div>
                         <div class="text-[11px]">ويوجد معاينة لمن يريد قبل الدفع ✅</div>
                     </div>
                 </div>
 
             </div>
 
-            <!-- المعرض التفاعلي بأسماء الصور الجديدة -->
+            <!-- معرض الصور التفاعلي (مربوط بأسماء جيت هب pic1 إلى pic5) -->
             <div class="lg:col-span-6 space-y-3">
-                <div class="relative bg-white border border-stone-border p-3.5 sm:p-5 rounded-3xl luxury-shadow overflow-hidden">
+                <div class="relative bg-white border border-royal-border p-4 rounded-3xl royal-shadow overflow-hidden">
                     
+                    <!-- شارة الصورة الحالية -->
                     <div class="flex items-center justify-between pb-3 px-1 text-xs font-semibold">
-                        <span id="galleryBadge" class="bg-stone-cardSoft text-stone-dark px-3 py-1 rounded-full border border-stone-border flex items-center gap-1.5 text-[11px] font-bold">
-                            <i class="fa-solid fa-sparkles text-amber-500"></i> طقم الملحقات الكامل + قاعدة الحجر
+                        <span id="galleryBadge" class="bg-royal-goldLight text-royal-deep px-3 py-1 rounded-full border border-royal-border flex items-center gap-1.5 text-[11px] font-bold">
+                            <i class="fa-solid fa-crown text-royal-goldDark"></i> طقم الملحقات الكامل + قاعدة الحجر
                         </span>
-                        <span class="text-[11px] text-stone-muted">اضغط لمشاهدة التفاصيل 👇</span>
+                        <span class="text-[11px] text-royal-muted">اضغط لمشاهدة التفاصيل 👇</span>
                     </div>
 
-                    <div class="rounded-2xl overflow-hidden bg-stone-cardSoft aspect-square flex items-center justify-center border border-stone-border relative group">
-                        <img id="mainGalleryImg" src="pic1.jpg" alt="طقم جهاز كهربجيه الكامل" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105">
+                    <!-- شاشة العرض الكبيرة -->
+                    <div class="rounded-2xl overflow-hidden bg-royal-pearl aspect-square flex items-center justify-center border border-royal-border relative group">
+                        <img id="mainGalleryImg" src="pic1.jpg.JPG" alt="طقم جهاز كهربجيه" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105">
                     </div>
 
-                    <!-- الأزرار الـ 5 بأسماء pic1 إلى pic5 -->
+                    <!-- الأزرار الـ 5 المصغرة -->
                     <div class="grid grid-cols-5 gap-2 pt-3">
-                        <button onclick="changeShowcase('pic1.jpg', 'طقم الملحقات الكامل + قاعدة الحجر', this)" class="thumb-btn thumb-active rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
-                            <img src="pic1.jpg" class="w-full h-full object-cover">
+                        <button onclick="changeShowcase('pic1.jpg.JPG', 'طقم الملحقات الكامل + قاعدة الحجر', this)" class="thumb-btn thumb-active rounded-xl overflow-hidden border-2 border-royal-border aspect-square bg-white transition duration-200">
+                            <img src="pic1.jpg.JPG" class="w-full h-full object-cover">
                         </button>
-                        <button onclick="changeShowcase('pic2.jpg', '💧 حماية IPX7 على الرخام والحنفية الذهبية', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
-                            <img src="pic2.jpg" class="w-full h-full object-cover">
+                        <button onclick="changeShowcase('pic2.jpg.JPG', '💧 عزل IPX7 على الرخام والحنفية الذهبية', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-royal-border aspect-square bg-white transition duration-200">
+                            <img src="pic2.jpg.JPG" class="w-full h-full object-cover">
                         </button>
-                        <button onclick="changeShowcase('pic3.jpg', '⚡ عزم دوران سينمائي فائق مع رذاذ الماء', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
-                            <img src="pic3.jpg" class="w-full h-full object-cover">
-                        </butto
+                        <button onclick="changeShowcase('pic3.jpg.JPG', '⚡ عزم دوران سينمائي فائق مع رذاذ الماء', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-royal-border aspect-square bg-white transition duration-200">
+                            <img src="pic3.jpg.JPG" class="w-full h-full object-cover">
+                        </button>
+                        <button onclick="changeShowcase('pic4.jpg.JPG', '🪝 الحامل الجداري المذهب بدون مسامير', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-royal-border aspect-square bg-white transition duration-200">
+                            <img src="pic4.jpg.JPG" class="w-full h-full object-cover">
+                        </button>
+                        <button onclick="changeShowcase('pic5.jpg.JPG', '✨ راحة وجمال في المطبخ الخشبي العصري', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-royal-border aspect-square bg-white transition duration-200">
+                            <img src="pic5.jpg.JPG" class="w-full h-full object-cover">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- قسم القوة والعزل الفاخر (Bento Showcase) -->
+    <section class="py-16 bg-white border-y border-royal-border">
+        <div class="max-w-6xl mx-auto px-5">
+            <div class="text-center max-w-xl mx-auto mb-14 space-y-2">
+                <span class="text-royal-goldDark font-extrabold text-xs uppercase tracking-widest">تناغم الأداء والتصميم</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-royal-deep">تفاصيل صُممت لتدوم طويلاً</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- كارت 1: الرخام والحنفية الذهبية -->
+                <div class="bg-royal-pearl rounded-3xl p-6 border border-royal-border flex flex-col justify-between royal-shadow overflow-hidden group">
+                    <div class="space-y-2 mb-4">
+                        <span class="inline-block px-3 py-1 rounded-full bg-white text-royal-deep font-bold text-xs border border-royal-border">
+                            رخام فاخر وعزل IPX7
+                        </span>
+                        <h3 class="text-xl font-black text-royal-deep">آمن على أثمن أسطح الحمام والمطبخ</h3>
+                        <p class="text-xs text-royal-muted leading-relaxed font-normal">
+                            ينظف الرخام والأواني المطلية بدون أدنى خدش، ومقاوم لتيار المياه المباشر من الصنبور بفضل هندسة العزل المائي الشاملة.
+                        </p>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-royal-border bg-white aspect-[4/3]">
+                        <img src="pic2.jpg.JPG" alt="عزل مائي رخام" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+
+                <!-- كارت 2: لقطة السبلاش الأسود -->
+                <div class="bg-royal-deep text-white rounded-3xl p-6 border border-royal-border flex flex-col justify-between royal-shadow overflow-hidden group">
+                    <div class="space-y-2 mb-4">
+                        <span class="inline-block px-3 py-1 rounded-full bg-royal-surface text-royal-gold font-bold text-xs border border-royal-gold/40">
+                            عزم دوران جبار 360°
+                        </span>
+                        <h3 class="text-xl font-black text-white">سرعة دوران تفتت أصعب الدهون في لحظة</h3>
+                        <p class="text-xs text-neutral-300 leading-relaxed font-normal">
+                            محرك فائق القوة لا يتوقف مهما ضغطت به على السطح، ليزيل البقع المحروقة والزيوت العميقة بأقل جهد ممكن.
+                        </p>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-neutral-700 bg-neutral-900 aspect-[4/3]">
+                        <img src="pic3.jpg.JPG" alt="عزم دوران جبار" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الرؤوس الـ 3 المرفقة -->
+    <section class="py-16 max-w-6xl mx-auto px-5">
+        <div class="text-center max-w-xl mx-auto mb-12 space-y-2">
+            <span class="text-royal-goldDark font-extrabold text-xs uppercase tracking-widest">تنوع كامل في الاستخدام</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-royal-deep">3 رؤوس متخصصة جاهزة لكل مهمة</h2>
+            <p class="text-xs sm:text-sm text-royal-muted font-normal">كل رأس مصمم بعناية ليناسب الأسطح الحساسة والشديدة في آن واحد:</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- رأس 1 -->
+            <div class="bg-white p-6 rounded-3xl border border-royal-border royal-shadow space-y-3 text-right hover:border-royal-gold transition duration-300">
+                <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center text-xl border border-amber-200">
+                    <i class="fa-solid fa-sponge"></i>
+                </div>
+                <h3 class="font-black text-base text-royal-deep">1. الرأس الإسفنجية (ناعمة)</h3>
+                <p class="text-xs text-royal-muted leading-relaxed font-normal">
+                    مخصصة للأواني التيفال والجرانيت، الأكواب الزجاجية، والمرايات الحساسة لتنظيفها بأمان كامل وبدون أدنى خدش.
+                </p>
+            </div>
+
+            <!-- رأس 2 -->
+            <div class="bg-white p-6 rounded-3xl border border-royal-border royal-shadow space-y-3 text-right hover:border-royal-gold transition duration-300">
+                <div class="w-12 h-12 rounded-2xl bg-royal-pearl text-royal-deep flex items-center justify-center text-xl border border-royal-border">
+                    <i class="fa-solid fa-wand-magic-sparkles text-royal-goldDark"></i>
+                </div>
+                <h3 class="font-black text-base text-royal-deep">2. الرأس القطنية الفاخرة</h3>
+                <p class="text-xs text-royal-muted leading-relaxed font-normal">
+                    لإزالة الغبار وتلميع رخام المطابخ، الحنفيات الاستانلس ستيل، والسيارة لإعادة البريق اللامع بدون أثر للماء.
+                </p>
+            </div>
+
+            <!-- رأس 3 -->
+            <div class="bg-white p-6 rounded-3xl border border-royal-border royal-shadow space-y-3 text-right hover:border-royal-gold transition duration-300">
+                <div class="w-12 h-12 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center text-xl border border-slate-300">
+                    <i class="fa-solid fa-broom"></i>
+                </div>
+                <h3 class="font-black text-base text-royal-deep">3. رأس الشعيرات الصلبة</h3>
+                <p class="text-xs text-royal-muted leading-relaxed font-normal">
+                    المحارب الأول ضد دهون البوتاجاز والفرن المتراكمة، فواصل السيراميك، وتكلسات الحمام الصعبة.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اللايف ستايل المطبخ الخشبي -->
+    <section class="py-14 bg-white border-y border-royal-border">
+        <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            <div class="rounded-3xl overflow-hidden border border-royal-border royal-shadow bg-royal-pearl aspect-[4/3]">
+                <img src="pic5.jpg.JPG" alt="حياة مريحة وتنظيف سهل" class="w-full h-full object-cover">
+            </div>
+
+            <div class="space-y-4 text-right">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-royal-goldLight text-royal-goldDark font-extrabold text-xs border border-royal-gold/40">
+                    راحة لكل أفراد العائلة
+                </span>
+                <h3 class="text-2xl font-black text-royal-deep">تنظيف البيت لم يعد عبئاً بعد اليوم</h3>
+                <p class="text-xs sm:text-sm text-royal-muted leading-relaxed font-normal">
+                    بوزن خفيف وتصميم متوازن في قبضة اليد، يصبح تنظيف المطبخ وتجهيزات العزومات أسرع بـ 3 أضعاف وبدون أي آلام في عضلات الذراع أو الظهر.
+                </p>
+                <div class="p-4 bg-royal-pearl rounded-2xl border border-royal-border text-xs flex items-center gap-3">
+                    <i class="fa-solid fa-gift text-royal-goldDark text-lg"></i>
+                    <span class="font-semibold text-royal-deep">يشمل العرض الحامل الجداري المذهب لتوفير المساحة وتعليق الجهاز بأناقة.</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- قسم استمارة الطلب الرسمية (Checkout) -->
+    <section id="order" class="max-w-3xl mx-auto px-5 py-16">
+        <div class="bg-white rounded-3xl border border-royal-border p-6 sm:p-10 royal-shadow space-y-6">
+            
+            <div class="text-center space-y-1">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-royal-goldLight text-royal-goldDark font-bold text-xs border border-royal-gold/40">
+                    ⚡️ خصم 250 جنيه لفترة محدودة
+                </span>
+                <h2 class="text-2xl font-black text-royal-deep">سجّل بيانات التوصيل</h2>
+                <p class="text-xs text-royal-muted font-medium">الدفع نقداً بعد الاستلام والمعاينة عند باب منزلك</p>
+            </div>
+
+            <!-- ملخص الفاتورة الصافي -->
+            <div class="bg-royal-pearl rounded-2xl p-4 border border-royal-border text-xs space-y-2">
+                <div class="flex justify-between items-center text-royal-muted font-medium">
+                    <span>باكج جهاز كهربجيه + الـ 3 رؤوس + الحامل اللاصق:</span>
+                    <span class="font-bold text-royal-deep">550 جنية</span>
+                </div>
+                <div class="flex justify-between items-center text-royal-muted font-medium">
+                    <span>مصاريف الشحن (شحن الصعيد المباشر):</span>
+                    <span class="font-bold text-royal-deep">110 جنية</span>
+                </div>
+                <div class="border-t border-royal-border pt-2.5 flex justify-between items-center text-sm font-extrabold text-royal-deep">
+                    <span>المبلغ المطلوب سداده للمندوب:</span>
+                    <span class="text-xl font-black text-royal-goldDark">660 جنية</span>
+                </div>
+            </div>
+
+            <!-- استمارة الطلب المباشرة المربوطة بإيميلك -->
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3.5">
+                <input type="hidden" name="access_key" value="37e10a4e-d88a-4b5c-847b-fadba112eccd" />
+                <input type="hidden" name="subject" value="⚡️ طلب جديد لجهاز كهربجيه" />
+                <input type="hidden" name="from_name" value="متجر كهربجيه" />
+                <input type="hidden" name="redirect" value="https://kahrbgya-lgtm.github.io/Kahrbgya/thank-you.html" />
+                
+                <div>
+                    <label class="block text-xs font-semibold text-royal-muted mb-1 text-right">الاسم بالكامل</label>
+                    <input type="text" name="Customer_Name" required placeholder="مثال: أحمد محمد" class="w-full px-4 py-3 rounded-xl border border-royal-border focus:outline-none focus:border-royal-deep bg-royal-pearl/50 text-xs sm:text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-royal-muted mb-1 text-right">رقم الهاتف (واتساب)</label>
+                    <input type="tel" name="Phone_Number" required placeholder="01xxxxxxxxx" class="w-full px-4 py-3 rounded-xl border border-royal-border focus:outline-none focus:border-royal-deep bg-royal-pearl/50 text-xs sm:text-sm text-right" dir="ltr">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-royal-muted mb-1 text-right">المحافظة والعنوان بالتفصيل</label>
+                    <input type="text" name="Address" required placeholder="المحافظة - المدينة - اسم الشارع والعمارة" class="w-full px-4 py-3 rounded-xl border border-royal-border focus:outline-none focus:border-royal-deep bg-royal-pearl/50 text-xs sm:text-sm">
+                </div>
+
+                <button type="submit" class="w-full bg-royal-deep hover:bg-royal-surface text-white py-4 rounded-xl font-bold text-sm transition duration-300 shadow-xl shadow-royal-deep/20 mt-2 flex items-center justify-center gap-2 border border-royal-gold/30">
+                    <span>تأكيد طلب الشراء — 660 ج.م</span>
+                    <i class="fa-solid fa-arrow-left text-xs text-royal-gold"></i>
+                </button>
+
+                <div class="text-center space-y-1 pt-1">
+                    <p class="text-xs font-bold text-royal-deep">
+                        الدفع عند الاستلام — <span class="text-emerald-800 font-extrabold">ويوجد معاينة لمن يريد ✅</span>
+                    </p>
+                    <p class="text-[11px] text-royal-muted font-normal">مدة الشحن من 5 إلى 6 أيام عمل كحد أقصى (نظراً للشحن من الصعيد).</p>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- فوتر فاخر -->
+    <footer class="py-6 text-center text-xs text-royal-muted border-t border-royal-border bg-white">
+        <p>© 2026 جميع الحقوق محفوظة لـ <strong>كهربجيه⚡️</strong> — أدوات التنظيف الذكية للمنزل العصري.</p>
+    </footer>
+
+    <!-- شريط الشراء العائم السريع بالموبايل -->
+    <div class="md:hidden fixed bottom-3 inset-x-3 z-50 glass-nav p-3 rounded-2xl border border-royal-border shadow-2xl flex items-center justify-between">
+        <div>
+            <div class="text-[10px] text-royal-muted font-bold">عرض محدود بخصم 250 ج</div>
+            <div class="flex items-baseline gap-1.5">
+                <span class="text-base font-black text-royal-deep">550 ج.م</span>
+                <span class="text-[10px] text-neutral-400 line-through">800 ج</span>
+            </div>
+        </div>
+        <a href="#order" class="bg-royal-deep text-white px-5 py-2.5 rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5 border border-royal-gold/30">
+            <span>اطلب الآن</span>
+            <i class="fa-solid fa-arrow-left text-[10px] text-royal-gold"></i>
+        </a>
+    </div>
+
+    <!-- كود تبديل الصور التفاعلي بالمعرض -->
+    <script>
+        function changeShowcase(imgSrc, badgeText, btn) {
+            const img = document.getElementById('mainGalleryImg');
+            const badge = document.getElementById('galleryBadge');
+            
+            img.style.opacity = '0.2';
+            setTimeout(() => {
+                img.src = imgSrc;
+                badge.innerHTML = '<i class="fa-solid fa-crown text-royal-goldDark"></i> ' + badgeText;
+                img.style.opacity = '1';
+            }, 150);
+
+            document.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('thumb-active'));
+            btn.classList.add('thumb-active');
+        }
+    </script>
+
+</body>
+</html>
