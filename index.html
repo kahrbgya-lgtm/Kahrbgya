@@ -17,7 +17,7 @@
                 extend: {
                     colors: {
                         stone: {
-                            base: '#F8F5EE',    /* درجة الحجر البيج الطبيعي المطابق لصورة الهيرو */
+                            base: '#F8F5EE',
                             card: '#FFFFFF',
                             cardSoft: '#F2ECE1',
                             dark: '#111412',
@@ -58,7 +58,6 @@
             box-shadow: 0 0 0 2px #C5A880;
             transform: scale(1.05);
         }
-        /* إخفاء شريط تايني هوست */
         div:has(a[href*="tiiny.host"]), a[href*="tiiny.host"], [class*="tiiny"], [id*="tiiny"] {
             display: none !important;
             visibility: hidden !important;
@@ -68,7 +67,7 @@
 </head>
 <body class="selection:bg-stone-dark selection:text-white pb-20 md:pb-10">
 
-    <!-- شريط الإعلان العلوي المتناسق مع الذهبي والرخام -->
+    <!-- شريط الإعلان العلوي -->
     <div class="bg-stone-dark text-stone-base text-center py-2.5 px-4 text-xs font-medium border-b border-stone-gold/25 flex items-center justify-center gap-2">
         <span class="inline-flex items-center gap-1.5 text-stone-gold font-bold">
             <i class="fa-solid fa-sparkles text-yellow-300"></i> عرض الإطلاق الحصري
@@ -79,7 +78,7 @@
         <span class="text-neutral-300 font-normal">الشحن 110 ج (شحن الصعيد) — يوجد معاينة لمن يريد</span>
     </div>
 
-    <!-- نافبار نقي بلمسة زجاجية -->
+    <!-- نافبار نقي -->
     <header class="sticky top-0 z-40 glass-nav border-b border-stone-border/80">
         <div class="max-w-6xl mx-auto px-5 py-3.5 flex justify-between items-center">
             <a href="#" class="text-2xl font-black tracking-tight text-stone-dark flex items-center gap-2">
@@ -102,11 +101,10 @@
         </div>
     </header>
 
-    <!-- Hero Section الرئيسي (المتناغم مع صورة الحجر البيج) -->
+    <!-- Hero Section الرئيسي -->
     <section class="max-w-6xl mx-auto px-5 pt-8 pb-14">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
-            <!-- معلومات المنتج والشراء -->
             <div class="lg:col-span-6 space-y-6 text-center lg:text-right">
                 
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-stone-border text-stone-accent text-xs font-bold shadow-sm">
@@ -126,7 +124,7 @@
                     وداعاً للفرك اليدوي الشاق وإجهاد مفاصل اليد والظهر. صُمم جهاز كهربجيه ليدور بسرعة دوران مضاعفة تفتت أصعب الدهون المحروقة وتكلسات الرخام والسيراميك في ثوانٍ معدودة.
                 </p>
 
-                <!-- ⚠️ تنبيه أمان سوكت الشحن المتناسق مع الذهبي -->
+                <!-- تنبيه سوكت الشحن -->
                 <div class="p-4 bg-amber-50/90 border border-amber-200 rounded-2xl flex items-start gap-3 text-right text-xs">
                     <div class="w-7 h-7 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-sm shrink-0 mt-0.5">
                         <i class="fa-solid fa-triangle-exclamation"></i>
@@ -139,7 +137,7 @@
                     </div>
                 </div>
 
-                <!-- ميزات الباكج الكاملة -->
+                <!-- الميزات -->
                 <div class="grid grid-cols-3 gap-2.5 pt-1 text-center">
                     <div class="p-3 rounded-2xl bg-white border border-stone-border shadow-sm space-y-1">
                         <div class="text-stone-dark text-base"><i class="fa-solid fa-gem text-amber-600"></i></div>
@@ -158,7 +156,6 @@
                     </div>
                 </div>
 
-                <!-- زر الشراء السريع -->
                 <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center lg:justify-start items-center">
                     <a href="#order" class="w-full sm:w-auto bg-stone-dark hover:bg-neutral-800 text-white px-8 py-4 rounded-2xl text-sm font-bold transition duration-300 shadow-xl shadow-neutral-900/15 flex items-center justify-center gap-2">
                         <span>اطلب الآن بـ 550 ج.م ⚡️</span>
@@ -172,11 +169,10 @@
 
             </div>
 
-            <!-- المعرض التفاعلي الجديد بالصور فائقة الجودة -->
+            <!-- المعرض التفاعلي بأسماء الصور الجديدة -->
             <div class="lg:col-span-6 space-y-3">
                 <div class="relative bg-white border border-stone-border p-3.5 sm:p-5 rounded-3xl luxury-shadow overflow-hidden">
                     
-                    <!-- شارة اللقطة النشطة -->
                     <div class="flex items-center justify-between pb-3 px-1 text-xs font-semibold">
                         <span id="galleryBadge" class="bg-stone-cardSoft text-stone-dark px-3 py-1 rounded-full border border-stone-border flex items-center gap-1.5 text-[11px] font-bold">
                             <i class="fa-solid fa-sparkles text-amber-500"></i> طقم الملحقات الكامل + قاعدة الحجر
@@ -184,254 +180,18 @@
                         <span class="text-[11px] text-stone-muted">اضغط لمشاهدة التفاصيل 👇</span>
                     </div>
 
-                    <!-- شاشة عرض الصورة الكبيرة بنقاء كامل -->
                     <div class="rounded-2xl overflow-hidden bg-stone-cardSoft aspect-square flex items-center justify-center border border-stone-border relative group">
-                        <img id="mainGalleryImg" src="img-hero.jpg" alt="طقم جهاز كهربجيه الكامل" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105">
+                        <img id="mainGalleryImg" src="pic1.jpg" alt="طقم جهاز كهربجيه الكامل" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105">
                     </div>
 
-                    <!-- الأزرار المصغرة الـ 5 الأنيقة -->
+                    <!-- الأزرار الـ 5 بأسماء pic1 إلى pic5 -->
                     <div class="grid grid-cols-5 gap-2 pt-3">
-                        <button onclick="changeShowcase('img-hero.jpg', 'طقم الملحقات الكامل + قاعدة الحجر', this)" class="thumb-btn thumb-active rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
-                            <img src="img-hero.jpg" class="w-full h-full object-cover">
+                        <button onclick="changeShowcase('pic1.jpg', 'طقم الملحقات الكامل + قاعدة الحجر', this)" class="thumb-btn thumb-active rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
+                            <img src="pic1.jpg" class="w-full h-full object-cover">
                         </button>
-                        <button onclick="changeShowcase('img-waterproof.jpg', '💧 حماية IPX7 على الرخام والحنفية الذهبية', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
-                            <img src="img-waterproof.jpg" class="w-full h-full object-cover">
+                        <button onclick="changeShowcase('pic2.jpg', '💧 حماية IPX7 على الرخام والحنفية الذهبية', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
+                            <img src="pic2.jpg" class="w-full h-full object-cover">
                         </button>
-                        <button onclick="changeShowcase('img-splash.jpg', '⚡ عزم دوران سينمائي فائق مع رذاذ الماء', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
-                            <img src="img-splash.jpg" class="w-full h-full object-cover" onerror="this.src='img-vs.jpg'">
-                        </button>
-                        <button onclick="changeShowcase('img-hook.jpg', '🪝 الحامل الجداري المذهب بدون مسامير', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
-                            <img src="img-hook.jpg" class="w-full h-full object-cover">
-                        </button>
-                        <button onclick="changeShowcase('img-lifestyle.jpg', '✨ راحة وجمال في المطبخ الخشبي العصري', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
-                            <img src="img-lifestyle.jpg" class="w-full h-full object-cover">
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- قسم القوة والعزل الفاخر (Bento Showcase يدمج الصور الجديدة) -->
-    <section class="py-16 bg-white border-y border-stone-border">
-        <div class="max-w-6xl mx-auto px-5">
-            <div class="text-center max-w-xl mx-auto mb-14 space-y-2">
-                <span class="text-stone-goldDark font-extrabold text-xs uppercase tracking-widest">تناغم الأداء والتصميم</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-stone-dark">تفاصيل صُممت لتدوم طويلاً</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- كارت 1: لقطة الرخام والحنفية الذهبية -->
-                <div class="bg-stone-base rounded-3xl p-6 border border-stone-border flex flex-col justify-between luxury-shadow overflow-hidden group">
-                    <div class="space-y-2 mb-4">
-                        <span class="inline-block px-3 py-1 rounded-full bg-white text-stone-accent font-bold text-xs border border-stone-border">
-                            رخام إيطالي وعزل IPX7
-                        </span>
-                        <h3 class="text-xl font-black text-stone-dark">آمن على أثمن أسطح الحمام والمطبخ</h3>
-                        <p class="text-xs text-stone-muted leading-relaxed font-normal">
-                            ينظف الرخام والأواني المطلية بدون أدنى خدش، ومقاوم لتيار المياه المباشر من الصنبور بفضل هندسة العزل المائي الشاملة.
-                        </p>
-                    </div>
-                    <div class="rounded-2xl overflow-hidden border border-stone-border bg-white aspect-[4/3]">
-                        <img src="img-waterproof.jpg" alt="عزل مائي رخام" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    </div>
-                </div>
-
-                <!-- كارت 2: لقطة السبلاش وعزم الدوران القوي -->
-                <div class="bg-stone-dark text-white rounded-3xl p-6 border border-stone-border flex flex-col justify-between luxury-shadow overflow-hidden group">
-                    <div class="space-y-2 mb-4">
-                        <span class="inline-block px-3 py-1 rounded-full bg-stone-charcoal text-stone-gold font-bold text-xs border border-stone-gold/30">
-                            عزم دوران جبار 360°
-                        </span>
-                        <h3 class="text-xl font-black text-white">سرعة دوران تفتت أصعب الدهون في لحظة</h3>
-                        <p class="text-xs text-neutral-300 leading-relaxed font-normal">
-                            محرك فائق القوة لا يتوقف مهما ضغطت به على السطح، ليزيل البقع المحروقة والزيوت العميقة بأقل جهد ممكن.
-                        </p>
-                    </div>
-                    <div class="rounded-2xl overflow-hidden border border-neutral-700 bg-neutral-900 aspect-[4/3]">
-                        <img src="img-splash.jpg" alt="عزم دوران جبار" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='img-vs.jpg'">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم الرؤوس الـ 3 المرفقة (مطابق لصورة المكونات على الصينية) -->
-    <section class="py-16 max-w-6xl mx-auto px-5">
-        <div class="text-center max-w-xl mx-auto mb-12 space-y-2">
-            <span class="text-stone-goldDark font-extrabold text-xs uppercase tracking-widest">تنوع كامل في الاستخدام</span>
-            <h2 class="text-2xl sm:text-3xl font-black text-stone-dark">3 رؤوس متخصصة جاهزة لكل مهمة</h2>
-            <p class="text-xs sm:text-sm text-stone-muted font-normal">كل رأس مصمم بعناية ليناسب الأسطح الحساسة والشديدة في آن واحد:</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- رأس 1 -->
-            <div class="bg-white p-6 rounded-3xl border border-stone-border luxury-shadow space-y-3 text-right hover:border-stone-gold transition duration-300">
-                <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center text-xl border border-amber-200">
-                    <i class="fa-solid fa-sponge"></i>
-                </div>
-                <h3 class="font-black text-base text-stone-dark">1. الرأس الإسفنجية (ناعمة)</h3>
-                <p class="text-xs text-stone-muted leading-relaxed font-normal">
-                    مخصصة للأواني التيفال والجرانيت، الأكواب الزجاجية، والمرايات الحساسة لتنظيفها بأمان كامل وبدون أدنى خدش.
-                </p>
-            </div>
-
-            <!-- رأس 2 -->
-            <div class="bg-white p-6 rounded-3xl border border-stone-border luxury-shadow space-y-3 text-right hover:border-stone-gold transition duration-300">
-                <div class="w-12 h-12 rounded-2xl bg-stone-base text-stone-dark flex items-center justify-center text-xl border border-stone-border">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <h3 class="font-black text-base text-stone-dark">2. الرأس القطنية الفاخرة</h3>
-                <p class="text-xs text-stone-muted leading-relaxed font-normal">
-                    لإزالة الغبار وتلميع رخام المطابخ، الحنفيات الاستانلس ستيل، والسيارة لإعادة البريق اللامع بدون أثر للماء.
-                </p>
-            </div>
-
-            <!-- رأس 3 -->
-            <div class="bg-white p-6 rounded-3xl border border-stone-border luxury-shadow space-y-3 text-right hover:border-stone-gold transition duration-300">
-                <div class="w-12 h-12 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center text-xl border border-slate-300">
-                    <i class="fa-solid fa-broom"></i>
-                </div>
-                <h3 class="font-black text-base text-stone-dark">3. رأس الشعيرات الصلبة</h3>
-                <p class="text-xs text-stone-muted leading-relaxed font-normal">
-                    المحارب الأول ضد دهون البوتاجاز والفرن المتراكمة، فواصل السيراميك، وتكلسات الحمام الصعبة.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم اللايف ستايل والحامل الجداري -->
-    <section class="py-14 bg-white border-y border-stone-border">
-        <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            
-            <div class="rounded-3xl overflow-hidden border border-stone-border luxury-shadow bg-stone-base aspect-[4/3]">
-                <img src="img-lifestyle.jpg" alt="حياة مريحة وتنظيف سهل" class="w-full h-full object-cover">
-            </div>
-
-            <div class="space-y-4 text-right">
-                <span class="inline-block px-3 py-1 rounded-full bg-stone-goldLight text-stone-goldDark font-extrabold text-xs border border-stone-gold/30">
-                    راحة لكل أفراد العائلة
-                </span>
-                <h3 class="text-2xl font-black text-stone-dark">تنظيف البيت لم يعد عبئاً ثقيلاً بعد اليوم</h3>
-                <p class="text-xs sm:text-sm text-stone-muted leading-relaxed font-normal">
-                    بوزن خفيف وتصميم متوازن في قبضة اليد، يصبح تنظيف المطبخ وتجهيزات العزومات أسرع بـ 3 أضعاف وبدون أي آلام في عضلات الذراع أو الظهر.
-                </p>
-                <div class="p-3.5 bg-stone-base rounded-2xl border border-stone-border text-xs flex items-center gap-3">
-                    <i class="fa-solid fa-gift text-stone-gold text-lg"></i>
-                    <span>يشمل العرض الحامل الجداري اللاصق لتوفير المساحة وتعليق الجهاز بأناقة.</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- قسم استمارة الطلب الرسمية (Checkout) -->
-    <section id="order" class="max-w-3xl mx-auto px-5 py-16">
-        <div class="bg-white rounded-3xl border border-stone-border p-6 sm:p-10 luxury-shadow space-y-6">
-            
-            <div class="text-center space-y-1">
-                <span class="inline-block px-3.5 py-1 rounded-full bg-stone-goldLight text-stone-goldDark font-bold text-xs border border-stone-gold/30">
-                    ⚡️ خصم 250 جنيه لفترة محدودة
-                </span>
-                <h2 class="text-2xl font-black text-stone-dark">سجّل طلبك الآن</h2>
-                <p class="text-xs text-stone-muted">الدفع نقداً بعد الاستلام والمعاينة عند باب منزلك</p>
-            </div>
-
-            <!-- ملخص الفاتورة الصافي -->
-            <div class="bg-stone-base rounded-2xl p-4 border border-stone-border text-xs space-y-2">
-                <div class="flex justify-between items-center text-stone-muted">
-                    <span>باكج جهاز كهربجيه + الـ 3 رؤوس + الحامل اللاصق:</span>
-                    <span class="font-bold text-stone-dark">550 جنية</span>
-                </div>
-                <div class="flex justify-between items-center text-stone-muted">
-                    <span>مصاريف الشحن (شحن من الصعيد لكافة المحافظات):</span>
-                    <span class="font-bold text-stone-dark">110 جنية</span>
-                </div>
-                <div class="border-t border-stone-border pt-2.5 flex justify-between items-center text-sm font-extrabold text-stone-accent">
-                    <span>المبلغ المطلوب سداده للمندوب:</span>
-                    <span class="text-xl font-black text-stone-dark">660 جنية</span>
-                </div>
-            </div>
-
-            <!-- استمارة الطلب المباشرة والسريعة المربوطة بإيميلك -->
-            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-3.5">
-                <input type="hidden" name="access_key" value="37e10a4e-d88a-4b5c-847b-fadba112eccd" />
-                <input type="hidden" name="subject" value="⚡️ طلب جديد لجهاز كهربجيه" />
-                <input type="hidden" name="from_name" value="متجر كهربجيه" />
-                <input type="hidden" name="redirect" value="https://kahrbgya-lgtm.github.io/Kahrbgya/thank-you.html" />
-                
-                <div>
-                    <label class="block text-xs font-semibold text-stone-muted mb-1 text-right">الاسم بالكامل</label>
-                    <input type="text" name="Customer_Name" required placeholder="مثال: أحمد محمد" class="w-full px-4 py-3 rounded-xl border border-stone-border focus:outline-none focus:border-stone-dark bg-stone-base/40 text-xs sm:text-sm">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-semibold text-stone-muted mb-1 text-right">رقم الهاتف (واتساب)</label>
-                    <input type="tel" name="Phone_Number" required placeholder="01xxxxxxxxx" class="w-full px-4 py-3 rounded-xl border border-stone-border focus:outline-none focus:border-stone-dark bg-stone-base/40 text-xs sm:text-sm text-right" dir="ltr">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-semibold text-stone-muted mb-1 text-right">المحافظة والعنوان بالتفصيل</label>
-                    <input type="text" name="Address" required placeholder="المحافظة - المدينة - اسم الشارع والعمارة" class="w-full px-4 py-3 rounded-xl border border-stone-border focus:outline-none focus:border-stone-dark bg-stone-base/40 text-xs sm:text-sm">
-                </div>
-
-                <button type="submit" class="w-full bg-stone-dark hover:bg-neutral-800 text-white py-4 rounded-xl font-bold text-sm transition duration-300 shadow-xl shadow-neutral-900/15 mt-2 flex items-center justify-center gap-2">
-                    <span>تأكيد طلب الشراء — 660 ج.م</span>
-                    <i class="fa-solid fa-arrow-left text-xs"></i>
-                </button>
-
-                <div class="text-center space-y-1 pt-1">
-                    <p class="text-xs font-bold text-stone-dark">
-                        الدفع عند الاستلام — <span class="text-emerald-800 font-extrabold">ويوجد معاينة لمن يريد ✅</span>
-                    </p>
-                    <p class="text-[11px] text-stone-muted font-normal">مدة الشحن من 5 إلى 6 أيام عمل كحد أقصى (نظراً للشحن من الصعيد).</p>
-                </div>
-            </form>
-
-        </div>
-    </section>
-
-    <!-- الفوتر الأنيق -->
-    <footer class="py-6 text-center text-xs text-stone-muted border-t border-stone-border bg-white">
-        <p>© 2026 جميع الحقوق محفوظة لـ <strong>كهربجيه⚡️</strong> — شحن موحد لكافة محافظات الجمهورية.</p>
-    </footer>
-
-    <!-- شريط الشراء العائم السريع بالموبايل (Floating Luxury Bar) -->
-    <div class="md:hidden fixed bottom-3 inset-x-3 z-50 glass-nav p-3 rounded-2xl border border-stone-border shadow-2xl flex items-center justify-between">
-        <div>
-            <div class="text-[10px] text-stone-muted font-bold">عرض محدود بخصم 250 ج</div>
-            <div class="flex items-baseline gap-1.5">
-                <span class="text-base font-black text-stone-dark">550 ج.م</span>
-                <span class="text-[10px] text-neutral-400 line-through">800 ج</span>
-            </div>
-        </div>
-        <a href="#order" class="bg-stone-dark text-white px-5 py-2.5 rounded-xl text-xs font-bold shadow-md flex items-center gap-1.5">
-            <span>اطلب الآن</span>
-            <i class="fa-solid fa-arrow-left text-[10px]"></i>
-        </a>
-    </div>
-
-    <!-- كود تبديل الصور التفاعلي بالمعرض -->
-    <script>
-        function changeShowcase(imgSrc, badgeText, btn) {
-            const img = document.getElementById('mainGalleryImg');
-            const badge = document.getElementById('galleryBadge');
-            
-            img.style.opacity = '0.2';
-            setTimeout(() => {
-                img.src = imgSrc;
-                badge.innerHTML = badgeText;
-                img.style.opacity = '1';
-            }, 150);
-
-            document.querySelectorAll('.thumb-btn').forEach(b => b.classList.remove('thumb-active'));
-            btn.classList.add('thumb-active');
-        }
-    </script>
-
-</body>
-</html>
+                        <button onclick="changeShowcase('pic3.jpg', '⚡ عزم دوران سينمائي فائق مع رذاذ الماء', this)" class="thumb-btn rounded-xl overflow-hidden border-2 border-stone-border aspect-square bg-white transition duration-200">
+                            <img src="pic3.jpg" class="w-full h-full object-cover">
+                        </butto
