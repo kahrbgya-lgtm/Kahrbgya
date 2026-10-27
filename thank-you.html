@@ -6,205 +6,126 @@
     <title>تم استلام طلبك بنجاح 🎉 | كهربجيه⚡️</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Meta Pixel Code - تتبع المبيعات Purchase -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            sage: '#4A6B5D',
-                            sageDark: '#354E43',
-                            cream: '#FBF9F5',
-                            sand: '#F2ECE4',
-                            gold: '#C5A880',
-                            dark: '#222926',
-                            muted: '#6B7570'
-                        }
-                    },
-                    fontFamily: {
-                        cairo: ['Cairo', 'sans-serif'],
-                    }
-                }
-            }
-        }
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1694177462222121');
+    fbq('track', 'PageView');
+    fbq('track', 'Purchase', {value: 650.00, currency: 'EGP'});
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1694177462222121&ev=Purchase&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
     <style>
         body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #FBF9F5;
-            color: #222926;
-        }
-        .soft-shadow {
-            box-shadow: 0 25px 50px -12px rgba(53, 78, 67, 0.12), 0 8px 24px rgba(0, 0, 0, 0.04);
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            background-color: #FAF7F2;
+            color: #1A1E1C;
         }
         @keyframes pulseGlow {
-            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
-            50% { transform: scale(1.03); box-shadow: 0 0 25px 8px rgba(16, 185, 129, 0.2); }
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
         }
         .pulse-btn {
             animation: pulseGlow 2.5s infinite;
         }
-        /* إخفاء أي إعلانات خارجية تلقائياً */
-        div:has(a[href*="tiiny.host"]), a[href*="tiiny.host"], [class*="tiiny"], [id*="tiiny"] {
-            display: none !important;
-            visibility: hidden !important;
-            height: 0 !important;
-        }
     </style>
-    <!-- Meta Pixel Code - تتبع المبيعات Purchase -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1694177462222121');
-fbq('track', 'PageView');
-fbq('track', 'Purchase', {value: 660.00, currency: 'EGP'});
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1694177462222121&ev=Purchase&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-brand-sage selection:text-white">
+<body class="min-h-screen flex flex-col justify-between selection:bg-[#0F261C] selection:text-white">
 
-    <!-- شريط علوي أنيق -->
-    <header class="py-4 text-center border-b border-brand-sand bg-white shadow-sm">
-        <a href="index.html" class="text-2xl font-black text-brand-dark inline-flex items-center gap-2">
-            <span class="w-9 h-9 rounded-full bg-brand-sage flex items-center justify-center text-white text-base shadow-sm">
+    <header class="py-4 text-center border-b border-[#E8DFCE] bg-white shadow-sm">
+        <a href="index.html" class="text-2xl font-black text-[#0F261C] inline-flex items-center gap-2">
+            <span class="w-9 h-9 rounded-full bg-[#0F261C] flex items-center justify-center text-[#D4AF37] text-base shadow-sm">
                 <i class="fa-solid fa-bolt-lightning text-yellow-300"></i>
             </span>
-            كهربجيه<span class="text-brand-sage text-xl font-bold">⚡️</span>
+            كهربجيه<span class="text-[#D4AF37] text-xl font-bold">⚡️</span>
         </a>
     </header>
 
-    <!-- المحتوى الرئيسي -->
     <main class="max-w-xl mx-auto px-4 py-8 w-full flex-grow flex items-center">
-        <div class="bg-white rounded-3xl border border-brand-sand p-6 sm:p-8 soft-shadow w-full text-center space-y-6">
+        <div class="bg-white rounded-3xl border border-[#E8DFCE] p-6 sm:p-8 shadow-xl w-full text-center space-y-6">
             
-            <!-- أيقونة التأكيد المتطورة -->
-            <div class="relative w-24 h-24 mx-auto flex items-center justify-center">
-                <div class="absolute inset-0 bg-emerald-100 rounded-full animate-ping opacity-30"></div>
-                <div class="w-20 h-20 bg-gradient-to-tr from-emerald-600 to-emerald-400 text-white rounded-full flex items-center justify-center text-4xl shadow-lg shadow-emerald-500/30 relative">
-                    <i class="fa-solid fa-check"></i>
-                </div>
+            <div class="relative w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-4xl shadow-inner">
+                <i class="fa-solid fa-check"></i>
             </div>
 
-            <!-- رسالة الشكر والترحيب -->
             <div class="space-y-2">
-                <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-black">
-                    <i class="fa-solid fa-circle-check"></i> تم تسجيل وتأكيد طلبك بنجاح
+                <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold">
+                    <i class="fa-solid fa-circle-check"></i> تم تأكيد واستلام طلبك بنجاح
                 </div>
-                <h1 class="text-2xl sm:text-3xl font-black text-brand-dark">
+                <h1 class="text-2xl sm:text-3xl font-black text-[#0F261C]">
                     شكراً لثقتك في كهربجيه⚡️!
                 </h1>
-                <p class="text-xs sm:text-sm text-brand-muted max-w-sm mx-auto leading-relaxed">
-                    طلبك قيد التجهيز الآن بعناية فائقة وسيتم إرساله في أول شحنة متجهة لمحافظتك.
+                <p class="text-xs sm:text-sm text-neutral-500 max-w-sm mx-auto leading-relaxed">
+                    طلبك قيد التجهيز الآن بعناية وسيصلك في أقرب وقت مع ميزة الشحن المجاني الكامل.
                 </p>
             </div>
 
-            <!-- شريط مراحل تجهيز وتوصيل الشحنة (Timeline) -->
-            <div class="bg-brand-cream/80 p-4 rounded-2xl border border-brand-sand">
-                <div class="grid grid-cols-3 gap-2 text-center text-[11px] font-bold">
-                    <div class="space-y-1.5">
-                        <div class="w-7 h-7 mx-auto rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs shadow-sm">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <span class="text-emerald-800 block">تم الطلب</span>
-                    </div>
-                    <div class="space-y-1.5">
-                        <div class="w-7 h-7 mx-auto rounded-full bg-amber-500 text-white flex items-center justify-center text-xs shadow-sm animate-pulse">
-                            <i class="fa-solid fa-box-open"></i>
-                        </div>
-                        <span class="text-amber-800 block">تجهيز الشحن</span>
-                    </div>
-                    <div class="space-y-1.5 opacity-60">
-                        <div class="w-7 h-7 mx-auto rounded-full bg-slate-300 text-slate-700 flex items-center justify-center text-xs">
-                            <i class="fa-solid fa-truck"></i>
-                        </div>
-                        <span class="text-slate-600 block">التسليم باليد</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- تفاصيل الشحن الخاصة بالصعيد ومدة التوصيل -->
-            <div class="p-4 bg-amber-50/70 border border-amber-200/80 rounded-2xl text-right flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg shrink-0">
-                    <i class="fa-solid fa-truck-fast"></i>
-                </div>
-                <div class="space-y-0.5">
-                    <h4 class="font-black text-amber-950 text-xs sm:text-sm">مدة التوصيل: من 5 إلى 6 أيام كحد أقصى</h4>
-                    <p class="text-[11px] text-amber-800 leading-relaxed font-semibold">
-                        نظراً للشحن المباشر من الصعيد إلى باب منزلك في أي محافظة لضمان وصول المنتج الأصلي.
-                    </p>
-                </div>
-            </div>
-
-            <!-- ملخص الفاتورة الشيك -->
-            <div class="bg-white rounded-2xl p-5 border border-brand-sand text-right space-y-3 text-xs sm:text-sm soft-shadow">
-                <div class="flex items-center justify-between border-b border-brand-sand pb-2">
-                    <span class="font-black text-brand-dark text-sm">تفاصيل الفاتورة الرسمية</span>
-                    <span class="text-[11px] font-bold text-brand-sage bg-brand-sand/50 px-2.5 py-0.5 rounded-full">الدفع كاش عند الاستلام</span>
+            <!-- الفاتورة بالشحن المجاني -->
+            <div class="bg-[#FAF7F2] rounded-2xl p-5 border border-[#E8DFCE] text-right space-y-3 text-xs sm:text-sm">
+                <div class="flex items-center justify-between border-b border-[#E8DFCE] pb-2">
+                    <span class="font-black text-[#0F261C] text-sm">تفاصيل الفاتورة الرسمية</span>
+                    <span class="text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full">الدفع كاش عند الاستلام</span>
                 </div>
                 
-                <div class="flex justify-between items-center text-brand-muted">
-                    <span>باكج جهاز كهربجيه + الـ 3 رؤوس + الحامل اللاصق:</span>
-                    <span class="font-bold text-brand-dark">550 جنية</span>
+                <div class="flex justify-between items-center text-neutral-600">
+                    <span>جهاز كهربجيه + 3 رؤوس + الحامل اللاصق:</span>
+                    <span class="font-bold text-[#0F261C]">650 جنية</span>
                 </div>
 
-                <div class="flex justify-between items-center text-brand-muted">
-                    <span>مصاريف الشحن (شحن من الصعيد لكافة المحافظات):</span>
-                    <span class="font-bold text-brand-dark">110 جنية</span>
+                <div class="flex justify-between items-center text-emerald-800 font-bold">
+                    <span>مصاريف الشحن لكافة المحافظات:</span>
+                    <span class="bg-emerald-100 px-2.5 py-0.5 rounded-full text-xs">مجاناً (0 ج)</span>
                 </div>
 
-                <div class="border-t border-brand-sand pt-3 flex justify-between items-center font-black text-brand-sage text-base">
-                    <span>المبلغ الإجمالي عند الاستلام:</span>
-                    <span class="text-xl sm:text-2xl font-black text-brand-dark">660 جنية</span>
+                <div class="border-t border-[#E8DFCE] pt-3 flex justify-between items-center font-black text-[#0F261C] text-base">
+                    <span>المبلغ النهائي المطلوب عند الاستلام:</span>
+                    <span class="text-xl sm:text-2xl font-black text-[#A88422]">650 جنية فقط</span>
                 </div>
             </div>
 
-            <!-- صندوق: يوجد معاينة لمن يريد قبل الاستلام -->
+            <!-- ميزة المعاينة -->
             <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl text-right flex items-start gap-3">
                 <i class="fa-solid fa-box-open text-emerald-600 text-xl mt-0.5 shrink-0"></i>
                 <div class="space-y-1">
-                    <h4 class="font-black text-emerald-950 text-xs sm:text-sm">يوجد معاينة وفحص لمن يريد قبل الاستلام</h4>
+                    <h4 class="font-black text-emerald-950 text-xs sm:text-sm">يوجد معاينة وفحص لمن يريد قبل الدفع</h4>
                     <p class="text-[11px] sm:text-xs text-emerald-800 leading-relaxed">
-                        إذا كنت ترغب في فحص الشحنة، متاح لك فتح الكرتونة والتأكد من الجهاز ومشتملاته كاملة أمام المندوب قبل السداد بكل راحة وأمان.
+                        متاح لك فتح الكرتونة والتأكد من الجهاز ومشتملاته كاملة أمام مندوب الشحن قبل دفع أي مليم.
                     </p>
                 </div>
             </div>
 
-            <!-- أزرار الإجراءات (الواتساب المباشر لرقمك) -->
+            <!-- زر الواتساب -->
             <div class="pt-2 flex flex-col sm:flex-row gap-3">
-                <a href="https://wa.me/201127736310?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D9%82%D9%85%D8%AA%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%AC%D9%87%D8%A7%D8%B2%20%D9%83%D9%87%D8%B1%D8%A8%D8%AC%D9%8A%D9%87%E2%9A%A1%EF%B8%8F%20%D9%88%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AA%D8%A3%D9%83%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B4%D8%AD%D9%86" 
+                <a href="https://wa.me/201127736310?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D9%82%D9%85%D8%AA%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%AC%D9%87%D8%A7%D8%B2%20%D9%83%D9%87%D8%B1%D8%A8%D8%AC%D9%8A%D9%87%E2%9A%A1%EF%B8%8F%20%D8%A8%D8%B9%D8%B1%D8%B6%20650%20%D8%AC%20%D8%B4%D8%A7%D9%85%D9%84%20%D8%A7%D9%84%D8%B4%D8%AD%D9%86%20%D9%85%D8%AC%D8%A7%D9%86%D8%A7%D9%8B" 
                    target="_blank"
-                   class="flex-1 pulse-btn bg-emerald-600 hover:bg-emerald-700 text-white py-4 px-4 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition shadow-lg shadow-emerald-600/25">
+                   class="flex-1 pulse-btn bg-emerald-600 hover:bg-emerald-700 text-white py-4 px-4 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition shadow-lg">
                     <i class="fa-brands fa-whatsapp text-2xl"></i>
                     <span>تأكيد أسرع عبر الواتساب</span>
                 </a>
 
-                <a href="index.html" class="flex-1 bg-brand-sand hover:bg-brand-sand/70 text-brand-dark py-4 px-4 rounded-2xl font-bold text-sm flex items-center justify-center transition border border-brand-sand">
-                    العودة لصفحة المنتج
+                <a href="index.html" class="flex-1 bg-[#FAF7F2] hover:bg-neutral-100 text-[#0F261C] py-4 px-4 rounded-2xl font-bold text-sm flex items-center justify-center transition border border-[#E8DFCE]">
+                    العودة للمتجر
                 </a>
             </div>
-
-            <p class="text-[11px] text-brand-muted">
-                سيتواصل معك مندوبنا هاتفياً أو عبر الواتساب قبل موعد التسليم مباشرة.
-            </p>
 
         </div>
     </main>
 
-    <!-- فوتر بسيط -->
-    <footer class="py-5 text-center text-xs text-brand-muted border-t border-brand-sand bg-white">
+    <footer class="py-5 text-center text-xs text-neutral-400 border-t border-[#E8DFCE] bg-white">
         <p>© 2026 جميع الحقوق محفوظة لـ <strong>كهربجيه⚡️</strong></p>
     </footer>
 
